@@ -1,0 +1,96 @@
+{% load static %}
+<!-- ==================== Start Navgition ==================== -->
+
+    <div id="navi" class="topnav">
+        <div class="container-fluid">
+            <div class="logo">
+               <div class="logo">
+    <img src="{% static 'img/logo-avio.png' %}"
+     alt="Logo"
+     class="nav-logo"
+     style="width:150px; height:45px;">
+
+</div>
+        </div>
+            <div class="menu-icon">
+                <span class="icon">
+                    <i></i>
+                    <i></i>
+                </span>
+                <span class="text" data-splitting>Menu</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hamenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8">
+                    <div class="menu-links">
+                        <ul class="main-menu">
+                            <li>
+                                <div class="o-hidden">
+                                    <a href="{% url 'home' %}" class="link">
+    <span class="nm">01.</span>Home
+</a>
+                                </div>
+                                <div class="sub-menu">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="o-hidden">
+                                    <a href="{% url 'about' %}" class="link">
+    <span class="nm">02.</span>About Us
+</a>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="o-hidden">
+                                    <a href="{% url 'blog' %}" class="link">
+    <span class="nm">03.</span>Blog
+</a></div>
+                                <div class="sub-menu">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="o-hidden">
+                                   <a href="{% url 'courses' %}" class="link">
+    <span class="nm">04.</span>Courses
+</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="o-hidden">
+                                   <a href="{% url 'contact' %}" class="link">
+    <span class="nm">05.</span>Contact Us
+</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="cont-info">
+                        <div class="item">
+                            <h6>Phone :</h6>
+                            <p>+91 7902222771,
+                                +91 7902222774,
+                                +91 7902222775</p>
+                        </div>
+                        <div class="item">
+                            <h6>Address :</h6>
+                            <p>Parapilly Ln, Panampilly Nagar, Kochi- 682036, Kerala, India</p>
+                        </div>
+                        <div class="item">
+                            <h6>Email :</h6>
+                            <p>support@aviothiceducationacademy.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== End Navgition ==================== -->
+

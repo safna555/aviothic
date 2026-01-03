@@ -1,0 +1,94 @@
+{% load static %}
+<style>
+.footer-sm {
+    background-color: #fff; /* white background */
+    color: #111; /* dark text */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer-sm a {
+    color: #007bff; /* blue links */
+    text-decoration: none;
+}
+
+.footer-sm a:hover {
+    text-decoration: underline;
+}
+
+.footer-sm .left p {
+    margin: 5px 0;
+}
+
+.footer-sm .contact-info p {
+    line-height: 1.6;
+}
+
+.footer-sm .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.footer-sm .footer-links li a {
+    color: #111; /* dark links on white background */
+    transition: color 0.3s;
+}
+
+.footer-sm .footer-links li a:hover {
+    color: #007bff; /* hover color */
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .footer-sm .left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer-sm .right {
+        text-align: center;
+    }
+
+    .footer-sm .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+</style>
+
+<footer class="footer-sm">
+    <div class="container">
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-lg-6 col-md-4">
+                <div class="left contact-info">
+                    <img src="{% static 'img/WhatsApp_Image_2025-12-25_at_4.51.25_PM__1_-removebg-preview.png' %}"
+     alt="Logo"
+     class="nav-logo"
+     style="width:130px; height:65px;">
+                    <p><strong>Phone:</strong><br> +91 7902222771,<br> +91 7902222774,<br> +91 7902222775</p>
+                    <p><strong>Address:</strong><br> Parapilly Ln, Panampilly Nagar,<br> Kochi-682036, Kerala, India</p>
+                    <p><strong>Email:</strong><br> <a href="mailto:support@aviothiceducationacademy.in">support@aviothiceducationacademy.in</a></p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-lg-6 col-md-4">
+                <div class="right">
+                    <ul class="footer-links">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'courses' %}">Courses</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

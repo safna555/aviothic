@@ -1,0 +1,416 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+
+<style>
+    .course-item {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .course-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%);
+    }
+
+    .course-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    .course-item h4 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .course-item p {
+        color: #666;
+        margin: 0;
+    }
+
+    .feature-box {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .feature-box:hover {
+        box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    }
+
+    .feature-box h4 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .feature-box p {
+        color: #555;
+        line-height: 1.7;
+    }
+
+    /* Portfolio/Gallery Items with Course Names */
+    .items {
+        margin-bottom: 30px;
+    }
+
+    .item-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        height: 300px;
+    }
+
+    .item-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .item-img:hover img {
+        transform: scale(1.1);
+    }
+
+    .item-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(79, 172, 254, 0.9) 0%, rgba(0, 242, 254, 0.9) 100%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-img:hover .item-img-overlay {
+        opacity: 1;
+    }
+
+    .overlay-info h5 {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 0 20px;
+        transform: translateY(20px);
+        transition: transform 0.4s ease;
+    }
+
+    .item-img:hover .overlay-info h5 {
+        transform: translateY(0);
+    }
+
+    /* Course Label on Image */
+    .course-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        padding: 40px 20px 20px;
+        z-index: 2;
+    }
+
+    .course-label h5 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .course-label p {
+        color: #fff;
+        font-size: 14px;
+        margin: 5px 0 0;
+        opacity: 0.9;
+    }
+
+    /* Filter Buttons */
+    .filtering .filter span {
+        cursor: pointer;
+        padding: 10px 25px;
+        margin: 0 5px 10px;
+        border: 2px solid #ddd;
+        border-radius: 30px;
+        display: inline-block;
+        transition: all 0.3s ease;
+        font-weight: 500;
+    }
+
+    .filtering .filter span:hover,
+    .filtering .filter span.active {
+        background: linear-gradient(135deg, #f6a5c0 0%, #ffd1dc 100%);
+
+        color: #fff;
+        border-color: #4facfe;
+    }
+</style>
+
+<!-- ==================== Start wrapper ==================== -->
+
+<div class="wrapper">
+
+    <!-- ==================== Start Header ==================== -->
+    <section class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-9">
+                        <div class="cont">
+                            <h4><span class="stroke">Best Logistics</span> <span class="stroke">Institute in Kochi</span>, Your path to a bright future in <span class="stroke"> logistics and supply chain management.</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-wrapper bg-img parallaxie" data-background="{% static 'img/portfolio/people-walking-inside-airport-terminal.jpg' %}" data-overlay-dark="3">
+                <div class="title">
+                    <div class="container">
+                        <h3>Our Courses</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <!-- ==================== Start Introduction ==================== -->
+
+    <section class="intro section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content">
+                        <h2>Logistics Course in Kochi</h2>
+                        <p>Looking for a Logistics course in Kochi that will equip you with the skills and knowledge to succeed in the industry? Look no further than Avothic Education Academy, the best logistics institute in Kochi offering quality education from experienced teachers.</p>
+                        <p>During our Logistics course in Kochi, students acquire the knowledge and skills required to excel in the fast-paced world of logistics and supply chain management. Logistics planning, inventory management, transportation, and more will be covered through a combination of theoretical and practical training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Start Courses ==================== -->
+
+    <section class="courses section-padding bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="mb-30">Logistics Courses Offered</h2>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="course-item">
+                        <h4>P.G Diploma in Shipping, Port and Logistics Management</h4>
+                        <p><strong>Duration:</strong> 6 months</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="course-item">
+                        <h4>Diploma in Supply-Chain Management</h4>
+                        <p><strong>Duration:</strong> 6 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Start Why Choose Us ==================== -->
+
+    <section class="features section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="mb-50">Why Choose Our Logistics Institute in Ernakulam</h2>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="feature-box">
+                        <h4>Job Placement Assistance</h4>
+                        <p>Our logistics institute in Ernakulam provides job placement assistance to our students. We work with local logistics companies to help our students find job opportunities after completing the course.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="feature-box">
+                        <h4>Experienced Faculty</h4>
+                        <p>Highly qualified and experienced professors lead our logistics institute in Ernakulam. By bringing their expertise to the classroom, they help students gain practical insight and experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="feature-box">
+                        <h4>Industry Certifications</h4>
+                        <p>We offer logistics course in Kochi that can give you a competitive advantage in the job market by helping you earn industry certifications.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="feature-box">
+                        <h4>Affordable Fees</h4>
+                        <p>Our logistics course in Kochi fees are affordable and competitive, enabling everyone to access our programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Start Course Details ==================== -->
+
+    <section class="course-details section-padding bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="mb-30">What is Logistics Course?</h2>
+                    <p>The logistics process involves planning, implementing, and controlling how goods and services are transported from their point of origin to their point of consumption. Logistics courses provide students with knowledge and skills related to managing the flow of goods and services.</p>
+                    <p>A logistics course typically covers topics such as transportation management, inventory control, supply chain management, warehousing, and distribution. During this course, students will learn how to optimize the movement of goods through air, sea, and land modes of transportation.</p>
+                </div>
+            </div>
+            <div class="row mt-50">
+                <div class="col-lg-12">
+                    <h2 class="mb-30">What is Supply-Chain Management Course?</h2>
+                    <p>Supply chain management involves coordinating and managing all of the activities involved in producing and delivering goods to customers. A supply chain includes planning, sourcing, manufacturing, and delivering products to customers, as well as managing relationships and partnerships between different entities.</p>
+                    <p>Supply chain management ensures that the right products are delivered to customers at the right time, in the right quantity, with the right quality, and at the right price. In order to achieve this, supply chain managers must streamline processes, reduce costs, and minimize waste throughout the entire supply chain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Start works ==================== -->
+
+    <section class="portfolio section-padding">
+    <div class="container">
+        <div class="row">
+
+            <!-- filter links -->
+            <div class="filtering col-12">
+                <div class="filter">
+                    <span data-filter="*" class="active">All</span>
+                    <span data-filter=".brand">Logistics</span>
+                    <span data-filter=".web">Aviation</span>
+                </div>
+            </div>
+
+            <!-- gallery -->
+            <div class="gallery full-width">
+                <!-- item 5 -->
+                <div class="col-lg-3 col-md-6 items web">
+                    <div class="item-img wow fadeInUp" data-wow-delay=".4s">
+                        <a href="{% static 'project-details.html' %}">
+                            <img src="{% static 'img/portfolio/airline-check-attendant-handing-passport-commuter_11zon.jpg' %}" alt="image">
+                            <div class="course-label">
+                                <h5>P.G Diploma in - 1 Year</h5>
+                                <p>Airport Management</p>
+                            </div>
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width">
+                                    <h5 data-splitting>Airport Management</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item 7 -->
+                <div class="col-lg-3 col-md-6 items web">
+                    <div class="item-img wow fadeInUp" data-wow-delay=".4s">
+                        <a href="{% static 'project-details.html' %}">
+                            <img src="{% static 'img/portfolio/pilot-air-hostess-walking-with-their-trolley-bags.jpg' %}" alt="image">
+                            <div class="course-label">
+                                <h5>Certification Course in - 6 Month</h5>
+                                <p>Airport Management</p>
+                            </div>
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width">
+                                    <h5 data-splitting>Airport Management</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item 6 -->
+                <div class="col-lg-3 col-md-6 items brand">
+                    <div class="item-img wow fadeInUp" data-wow-delay=".4s">
+                        <a href="{% static 'project-details.html' %}">
+                            <img src="{% static 'img/portfolio/diverse-warehouse-team-using-bar-code-scanners-manage-packages_11zon.jpg' %}" alt="image">
+                            <div class="course-label">
+                                <h5>P.G Diploma in - 6 Month</h5>
+                                <p>Logistics Management</p>
+                            </div>
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width">
+                                    <h5 data-splitting>Logistics Management</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item 8 -->
+                <div class="col-lg-3 col-md-6 items brand">
+                    <div class="item-img wow fadeInUp" data-wow-delay=".4s">
+                        <a href="{% static 'project-details.html' %}">
+                            <img src="{% static 'img/portfolio/log1.png' %}" alt="image">
+                            <div class="course-label">
+                                <h5>Certification Course in - 6 Month</h5>
+                                <p>Supply Chain Management</p>
+                            </div>
+                            <div class="item-img-overlay valign">
+                                <div class="overlay-info full-width">
+                                    <h5 data-splitting>Supply Chain Management</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- ==================== Start call-to-action ==================== -->
+
+    <section class="call-action nogif">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-9">
+                    <div class="content">
+                        <h6 class="wow" data-splitting>Let's Talk</h6>
+                        <h2 class="wow" data-splitting>Contact <b>Us</b>.</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 valign">
+                    <a href="{% static 'contact.html' %}" class="btn-curve btn-lit">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

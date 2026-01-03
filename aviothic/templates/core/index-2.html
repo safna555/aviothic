@@ -1,0 +1,513 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block title %}Best Aviation Institute in Kochi - Aviothic Education Academy{% endblock %}
+{% block content %}
+
+    <!-- ==================== Start progress-scroll-button ==================== -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <!-- ==================== Start wrapper ==================== -->
+    <div class="wrapper">
+
+        <!-- ==================== Start Slider ==================== -->
+        <section class="slider fixed-slider center-slider slide-controls">
+            <div class="swiper-container parallax-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" data-background="{% static 'img/portfolio/people-walking-inside-airport-terminal.jpg' %}" data-overlay-dark="4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="caption">
+                                            <h1 data-splitting><a href="#about">Explore The World <br> <b class="stroke">Of Aviation</b></a></h1>
+                                            <a href="#courses" class="dis" data-splitting>Discover Courses</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" data-background="{% static 'img/portfolio/female-staff-showing-directions-businessman.jpg' %}" data-overlay-dark="4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="caption">
+                                            <h1 data-splitting><a href="#courses">Professional <br> <span class="stroke">Cabin Crew</span> Training</a></h1>
+                                            <a href="#courses" class="dis" data-splitting>View Programs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img valign" data-background="{% static 'img/portfolio/people-walking-inside-airport-terminal.jpg' %}" data-overlay-dark="4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1">
+                                        <div class="caption">
+                                            <h1 data-splitting><a href="#courses">Airport <br> <span class="stroke">Management</span> Excellence</a></h1>
+                                            <a href="#courses" class="dis" data-splitting>Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <span class="icon"><i class="fas fa-share-alt"></i></span>
+                    <a href="#0">Facebook</a>
+                    <a href="#0">Instagram</a>
+                    <a href="#0">LinkedIn</a>
+                </div>
+                <div class="swiper-button-next swiper-nav-ctrl next-ctrl"><i class="fas fa-caret-right"></i></div>
+                <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl"><i class="fas fa-caret-left"></i></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <div class="main-content">
+
+            <!-- ==================== Start About Academy ==================== -->
+            <section id="about" class="agency section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="imgsec">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="item">
+                                            <div class="imgone big-bord wow fadeInDown" data-wow-delay=".8s">
+                                                <img class="thumparallax-down" src="{% static 'img/pexels-nguyendesigner-13404726.jpg' %}" alt="Aviation Training">
+                                            </div>
+                                            <div class="exp">
+                                                <h2 class="nmb-font">100%</h2>
+                                                <h6>Job Placement</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="item">
+                                            <div class="imgtwo big-bord wow fadeInUp" data-wow-delay=".6s">
+                                                <img class="thumparallax" src="{% static 'img/portrait-flight-attendant-with-luggage.jpg' %}" alt="Aviation Professionals">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 valign">
+                            <div class="content">
+                                <h6 class="sub-title wow" data-splitting>About Aviothic</h6>
+                                <h4 class="wow" data-splitting>Best Aviation Institute <br> in Kochi, Kerala</h4>
+                                <p class="wow txt" data-splitting>Aviothic Education Academy is recognized as one of the premier aviation training institutes in Kochi, Kerala. We offer comprehensive courses in airport management, air hostess training, ground handling, cabin crew, cargo management, airline management, and logistics. Our mission is to prepare students for successful careers in the dynamic aviation industry through expert training and guaranteed placement support.</p>
+                                <a href="{% url 'about' %}" class="btn-curve mt-40 wow fadeInUp" data-wow-delay=".8s"><span>About Us</span></a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Start Aviation Courses ==================== -->
+            <section id="courses" class="work-carousel mcolumn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-head">
+                                <h6 class="wow" data-splitting>Our Programs</h6>
+                                <h3 class="wow" data-splitting>Aviation Courses We Offer</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 no-padding">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="img">
+                                                <span class="imgio">
+                                                    <div class="wow cimgio" data-delay="300"></div>
+                                                    <img src="{% static 'img/portfolio/img.1.png' %}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cont">
+                                                <h6><a href="{% url 'courses' %}">P.G Diploma in – 1 Year</a></h6>
+                                                <h4><a href="{% url 'courses' %}">Airport Management</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="img">
+                                                <span class="imgio">
+                                                    <div class="wow cimgio" data-delay="500"></div>
+                                                    <img src="{% static 'img/portfolio/logistics3.png' %}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cont">
+                                                <h6><a href="{% url 'courses' %}">Certification Course in - 6 Month </a></h6>
+                                                <h4><a href="{% url 'courses' %}">Airport Management</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="img">
+                                                <span class="imgio">
+                                                    <div class="wow cimgio" data-delay="700"></div>
+                                                    <img src="{% static 'img/portfolio/logistics2.png' %}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cont">
+                                                <h6><a href="{% url 'courses' %}">P.G Diploma in - 6 Month </a></h6>
+                                                <h4><a href="{% url 'courses' %}">Logistics Management</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content">
+                                            <div class="img">
+                                                <span class="imgio">
+                                                    <div class="wow cimgio" data-delay="400"></div>
+                                                    <img src="{% static 'img/portfolio/logistics.png' %}" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cont">
+                                                <h6><a href="{% url 'courses' %}">Certification Course in - 6 Month</a></h6>
+                                                <h4><a href="{% url 'courses' %}"> Supply Chain Management</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="content">
+                                            <div class="cont">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="content">
+                                            <div class="cont">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="content">
+                                            <div class="cont">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="content">
+                                            <div class="cont">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next swiper-nav-ctrl next-ctrl"><i class="ion-ios-arrow-right"></i></div>
+                                <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl"><i class="ion-ios-arrow-left"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Start Why Choose Us ==================== -->
+            <section class="about blc section-padding" data-overlay-dark="0">
+                <div class="container">
+                    <div class="row mb-80">
+                        <div class="col-lg-7">
+                            <div class="intro">
+                                <h6 class="sub-title wow" data-splitting>Why Aviothic</h6>
+                                <h2 class="extra-title wow" data-splitting>Why Our Aviation Course in Kochi is the Best</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 items">
+                            <div class="item wow fadeIn" data-wow-delay=".3s">
+                                <span class="icon"><i class="ion-ios-people"></i></span>
+                                <h5>Experienced Teachers</h5>
+                                <p>Experts with years of experience in the aviation industry teach our courses, providing the highest quality training.</p>
+                                <a href="#0" class="more-stroke"><span></span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 items active">
+                            <div class="item wow fadeIn" data-wow-delay=".3s">
+                                <span class="icon"><i class="ion-briefcase"></i></span>
+                                <h5>100% Placement Assistance</h5>
+                                <p>We partner with leading aviation companies across Kerala and India to ensure excellent career opportunities.</p>
+                                <a href="#0" class="more-stroke"><span></span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 items">
+                            <div class="item wow fadeIn" data-wow-delay=".3s">
+                                <span class="icon"><i class="ion-cash"></i></span>
+                                <h5>Cost-Efficient Training</h5>
+                                <p>High-quality aviation education at affordable prices, making professional training accessible to everyone.</p>
+                                <a href="#0" class="more-stroke"><span></span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 items">
+                            <div class="item wow fadeIn" data-wow-delay=".3s">
+                                <span class="icon"><i class="ion-ios-book"></i></span>
+                                <h5>Extensive Curriculum</h5>
+                                <p>Comprehensive courses covering aviation fundamentals to advanced industry topics.</p>
+                                <a href="#0" class="more-stroke"><span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Start Course Details ==================== -->
+            <section class="min-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="img">
+                                <img class="thumparallax-down" src="{% static 'img/portfolio/female-staff-interacting-with-passenger_11zon.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 valign">
+                            <div class="content">
+                                <h6 class="sub-title wow" data-splitting>Our Approach</h6>
+                                <h4 class="wow" data-splitting>Learn. Train. Excel.</h4>
+                                <p class="wow txt" data-splitting>The aviation industry is rapidly growing, and Kochi is a major aviation hub in India. Our academy provides knowledge and skills for success through latest industry trends, hands-on experience, and deep understanding of aviation operations.</p>
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-delay=".2s">NACTET certification upon course completion</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".4s">Innovative training materials and dynamic learning environment</li>
+                                    <li class="wow fadeInUp" data-wow-delay=".6s">Industry-recognized certification and credentials</li>
+                                </ul>
+                                <a href="{% url 'courses' %}" class="btn-curve mt-40 wow fadeInUp" data-wow-delay=".8s"><span>View All Courses</span></a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Start Video Section ==================== -->
+            <section class="video-wrapper section-padding bg-img parallaxie valign" data-background="{% static 'img/aviation/airport-ops.jpg' %}" data-overlay-dark="5">
+                <div class="full-width text-center">
+                    <div class="content">
+                        <h2 class="wow" data-splitting style="color: white; margin-bottom: 30px;">Experience Aviation Excellence</h2>
+                        <p class="wow" data-splitting style="color: white; font-size: 18px; margin-bottom: 40px;">Watch how we prepare students for successful aviation careers</p>
+                    </div>
+                    <a class="vid" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
+                        <div class="vid-butn">
+                            <span class="icon"><i class="fas fa-play"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ==================== Start Latest Updates ==================== -->
+<section class="blog-grid section-padding pb-0">
+    <div class="stories bg-img no-cover bg-pattern" data-background="{% static 'img/pattern.svg' %}"></div>
+    <div class="container">
+        <div class="row mb-50">
+            <div class="col-lg-12">
+                <div class="section-head text-center">
+                    <h6 class="wow" data-splitting>Latest Updates</h6>
+                    <h3 class="wow" data-splitting>Aviation Education & Training</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="item wow fadeInUp md-mb50" data-wow-delay=".3s">
+                    <div class="post-img">
+                        <div class="img">
+                            <img src="{% static 'img/portfolio/female-staff-showing-directions-businessman.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <div class="info">
+                        </div>
+                        <h5><a href="#0">Top Aviation Courses to Launch Your Career in 2025</a></h5>
+                        <a href="{% url 'blog' %}" class="more">
+                            <span>Read More <i class="icofont-caret-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="item wow fadeInUp md-mb50" data-wow-delay=".1s">
+                    <div class="post-img">
+                        <div class="img">
+                            <img src="{% static 'img/portfolio/smiling-commuter-interacting-with-attendant-check-counter.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <div class="info">
+                        </div>
+                        <h5><a href="#0">An Academic Approach to Selecting an Aviation Training Institute</a></h5>
+                        <a href="{% url 'blog' %}" class="more">
+                            <span>Read More <i class="icofont-caret-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="item wow fadeInUp" data-wow-delay=".5s">
+                    <div class="post-img">
+                        <div class="img">
+                            <img src="{% static 'img/portfolio/businesswoman-queue-receiving-passport-boarding-pass.jpg' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <div class="info">
+                        </div>
+                        <h5><a href="#0">Student Success Stories: From Classroom to Cockpit</a></h5>
+                        <a href="{% url 'blog' %}" class="more">
+                            <span>Read More <i class="icofont-caret-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================== End Latest Updates ==================== -->
+            <!-- ==================== Start Placement Partners ==================== -->
+            <section id="placement" class="clients section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="intro mb-80">
+                                <h6 class="sub-title wow" data-splitting>OUR PLACEMENT PARTNERS</h6>
+                                <h2 class="extra-title wow" data-splitting>Working With Top Employers To Advance Your Career</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bord">
+                        <div class="col-md-3 col-6 brands">
+                            <div class="item wow fadeIn" data-wow-delay=".3s">
+                                <div class="img">
+                                    <img src="{% static 'img/clients/brands/air-india-logo.png' %}" alt="">
+                                </div>
+                                <a href="#0" class="link" data-splitting>Air India</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 brands">
+                            <div class="item wow fadeIn" data-wow-delay=".6s">
+                                <div class="img">
+                                    <img src="{% static 'img/clients/brands/Indigo_logo.png' %}" alt="">
+                                </div>
+                                <a href="#0" class="link" data-splitting>IndiGo Airlines</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 brands">
+                            <div class="item wow fadeIn" data-wow-delay=".8s">
+                                <div class="img">
+                                    <img src="{% static 'img/clients/brands/ekart_logo.png' %}" alt="">
+                                </div>
+                                <a href="#0" class="link" data-splitting>Ekart</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 brands">
+                            <div class="item wow fadeIn" data-wow-delay=".3s">
+                                <div class="img">
+                                    <img src="{% static 'img/clients/brands/cochin_logo.jpg' %}" alt="">
+                                </div>
+                                <a href="#0" class="link" data-splitting>Cochin Logistics</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-6 brands">
+                            <div class="item wow fadeIn" data-wow-delay=".4s">
+                                <div class="img">
+                                    <img src="{% static 'img/clients/brands/amazon-logo.jpg' %}" alt="">
+                                </div>
+                                <a href="#0" class="link" data-splitting>Amazon</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 brands">
+                            <div class="item wow fadeIn" data-wow-delay=".7s">
+                                <div class="img">
+                                    <img src="{% static 'img/clients/brands/dhl.png' %}" alt="">
+                                </div>
+                                <a href="#0" class="link" data-splitting>DHL</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 brands">
+                            <div class="item wow fadeIn" data-wow-delay=".5s">
+                                <div class="img">
+                                    <img src="{% static 'img/clients/brands/vistara_logo.png' %}" alt="">
+                                </div>
+                                <a href="#0" class="link" data-splitting>Vistara</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 brands">
+                            <div class="item wow fadeIn" data-wow-delay=".3s">
+                                <div class="img">
+                                    <img src="{% static 'img/clients/brands/blue_dart.jpg' %}" alt="">
+                                </div>
+                                <a href="#0" class="link" data-splitting>Blue Dart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- ==================== End clients Brands ==================== -->
+
+
+<!-- ==================== Start call-to-action ==================== -->
+
+<section class="call-action section-padding" data-overlay-dark="0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content text-center">
+                    <h6 class="wow" data-splitting>Let’s Talk</h6>
+                    <h2 class="wow" data-splitting>
+                       Start a <b>conversation <br> with us</b>.
+                    </h2>
+                    <a href="{% url 'contact' %}" class="btn-curve btn-lit mt-30">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+            <!-- ==================== End call-to-action ==================== -->
+
+
+
+        </div>
+
+    </div>
+
+    <!-- ==================== End wrapper ==================== -->
+
+
+
+    <!-- ==================== Start cursor ==================== -->
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- ==================== End cursor ==================== -->
+
+{% endblock %}
+

@@ -1,0 +1,335 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Aviation Blog{% endblock %}
+
+{% block content %}
+
+<div class="wrapper">
+
+    <!-- ==================== Start Header ==================== -->
+
+     <section class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-9">
+                        <div class="cont">
+                            <h4><span class="stroke">Aviation Insights.</span>, Explore the latest news, guides, and insights from the aviation industry.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-wrapper bg-img parallaxie" data-background="{% static 'img/portfolio/people-walking-inside-airport-terminal.jpg' %}" data-overlay-dark="3">
+                <div class="title">
+                    <div class="container">
+                        <h3>Blog</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- ==================== Start Blog ==================== -->
+
+    <section class="blog-pg section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11">
+
+                    <!-- Introduction Section -->
+                    <div class="blog-intro mb-80">
+                        <p class="lead">
+                            It can be both exciting and challenging to pursue a career in aviation. This is a broad and diverse field that encompasses everything from the design and development of aircraft to the operation and maintenance of those aircraft. Aerospace studies are not only fascinating, but they are also very beneficial as well. We will discuss what aviation is, the benefits of studying aviation, and the aviation phonetic alphabet in this blog.
+                        </p>
+                    </div>
+
+                    <!-- What is Aviation Section -->
+                    <div class="content-section mb-80">
+                        <h2 class="mb-30">What is Aviation?</h2>
+                        <p>
+                            The study and practice of aviation includes designing, building, operating, and maintaining aircraft. A variety of disciplines are involved, including engineering, physics, mathematics, and computer science. Flying, communicating, and doing business have been revolutionized by aviation. Globalization and the internet have made the world smaller and more connected.
+                        </p>
+                    </div>
+
+                    <!-- Benefits Section -->
+                    <div class="content-section mb-80">
+                        <h2 class="mb-30">Benefits of Studying Aviation:</h2>
+
+                        <div class="benefit-item mb-40">
+                            <h4 class="mb-20">Career Opportunities</h4>
+                            <p>
+                                There are many career opportunities available to students who study aviation. Pilots, aircraft mechanics, air traffic controllers, airport managers, aerospace engineers, and aviation managers are among the careers you can choose from. Several job opportunities are available in the aviation industry due to its constant growth and evolution.
+                            </p>
+                        </div>
+
+                        <div class="benefit-item mb-40">
+                            <h4 class="mb-20">Global Opportunities</h4>
+                            <p>
+                                Aviation students have many career options available to them. The careers you can choose from include pilots, aircraft mechanics, air traffic controllers, airport managers, aerospace engineers, and aviation managers. As the aviation industry continues to grow and evolve, a wide range of job opportunities are available. Aviation is a global industry, so studying aviation will allow you to work around the world. You can work for international airlines, airports, or aircraft manufacturers.
+                            </p>
+                        </div>
+
+                        <div class="benefit-item mb-40">
+                            <h4 class="mb-20">Exciting and Challenging Work</h4>
+                            <p>
+                                There are many benefits to studying aviation, including intellectual stimulation and challenging work. Aircraft piloting, airplane design, or airport management are all rewarding careers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Aviation Phonetic Alphabet Section -->
+                    <div class="content-section mb-80">
+                        <h2 class="mb-30">Aviation Phonetic Alphabet:</h2>
+                        <p class="mb-30">
+                            A phonetic alphabet, also known as a NATO phonetic alphabet, allows letters and numbers to be communicated over radio or telephone. There are 26 code words in the phonetic alphabet, each representing a letter.
+                        </p>
+                        <p class="mb-30">
+                            Air traffic controllers and pilots developed the aviation alphabet to avoid confusion and miscommunication. In noisy or crowded environments, the letters of the English alphabet can sound similar over the radio or telephone. Letters and numbers can be communicated clearly and concisely using the phonetic alphabet.
+                        </p>
+
+                        <h4 class="mb-30">The aviation phonetic alphabet is as follows:</h4>
+
+                        <div class="phonetic-alphabet">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="phonetic-list">
+                                        <li><strong>A</strong> – Alpha</li>
+                                        <li><strong>B</strong> – Bravo</li>
+                                        <li><strong>C</strong> – Charlie</li>
+                                        <li><strong>D</strong> – Delta</li>
+                                        <li><strong>E</strong> – Echo</li>
+                                        <li><strong>F</strong> – Foxtrot</li>
+                                        <li><strong>G</strong> – Golf</li>
+                                        <li><strong>H</strong> – Hotel</li>
+                                        <li><strong>I</strong> – India</li>
+                                        <li><strong>J</strong> – Juliet</li>
+                                        <li><strong>K</strong> – Kilo</li>
+                                        <li><strong>L</strong> – Lima</li>
+                                        <li><strong>M</strong> – Mike</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="phonetic-list">
+                                        <li><strong>N</strong> – November</li>
+                                        <li><strong>O</strong> – Oscar</li>
+                                        <li><strong>P</strong> – Papa</li>
+                                        <li><strong>Q</strong> – Quebec</li>
+                                        <li><strong>R</strong> – Romeo</li>
+                                        <li><strong>S</strong> – Sierra</li>
+                                        <li><strong>T</strong> – Tango</li>
+                                        <li><strong>U</strong> – Uniform</li>
+                                        <li><strong>V</strong> – Victor</li>
+                                        <li><strong>W</strong> – Whiskey</li>
+                                        <li><strong>X</strong> – X-ray</li>
+                                        <li><strong>Y</strong> – Yankee</li>
+                                        <li><strong>Z</strong> – Zulu</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Blog Posts Grid -->
+                    <div class="posts">
+                        <h2 class="mb-50">Related Articles</h2>
+
+                        <div class="item mb-80">
+                            <div class="img">
+                                <a href="{% url 'contact' %}">
+                                    <img src="{% static 'img/blog/front-view-travel-agent-sitting-her-working-place-holding-toy-plane-agency-service-world-operator-assistant-map-global-ticket-managers_11zon.jpg' %}" alt="Aviation Phonetic Alphabet">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="tags">
+                                            <a href="#0">Aviation</a>
+                                            <a href="#0">Communication</a>
+                                            <a href="#0">Training</a>
+                                        </div>
+                                        <h4 class="title">
+                                            <a href="{% url 'contact' %}">Aviation Phonetic Alphabet Explained</a>
+                                        </h4>
+                                        <p>
+                                            Discover the NATO phonetic alphabet used by pilots and air traffic controllers worldwide. Learn how this essential communication tool prevents confusion and ensures safety in aviation operations.
+                                        </p>
+                                        <a href="{% url 'contact' %}" class="more">Read More</a>
+                                    </div>
+                                    <div class="col-2 valign">
+                                        <div class="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-80">
+                            <div class="img">
+                                <a href="{% url 'contact' %}">
+                                    <img src="{% static 'img/blog/close-up-blurry-hand-holding-pencil (1)_11zon.jpg' %}" alt="Career Opportunities in Aviation">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="tags">
+                                            <a href="#0">Careers</a>
+                                            <a href="#0">Aviation</a>
+                                            <a href="#0">Education</a>
+                                        </div>
+                                        <h4 class="title">
+                                            <a href="{% url 'contact' %}">Career Opportunities in Aviation Industry</a>
+                                        </h4>
+                                        <p>
+                                            Explore diverse career paths in aviation, from pilots and engineers to air traffic controllers and airport managers. Learn about the exciting opportunities in this growing global industry.
+                                        </p>
+                                        <a href="{% url 'contact' %}" class="more">Read More</a>
+                                    </div>
+                                    <div class="col-2 valign">
+                                        <div class="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item mb-80">
+                            <div class="img">
+                                <a href="{% url 'contact' %}">
+                                    <img src="{% static 'img/blog/earth-globe-airplane-model-notepad-wooden-background-top-view_11zon.jpg' %}" alt="Benefits of Studying Aviation">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="tags">
+                                            <a href="#0">Education</a>
+                                            <a href="#0">Aviation</a>
+                                            <a href="#0">Career Growth</a>
+                                        </div>
+                                        <h4 class="title">
+                                            <a href="{% url 'contact' %}">Why Study Aviation? Benefits and Opportunities</a>
+                                        </h4>
+                                        <p>
+                                            Aviation studies offer exciting career opportunities, high-paying jobs, and global work options. Discover why pursuing a career in aviation can be both challenging and rewarding.
+                                        </p>
+                                        <a href="{% url 'contact' %}" class="more">Read More</a>
+                                    </div>
+                                    <div class="col-2 valign">
+                                        <div class="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="img">
+                                <a href="{% url 'contact' %}">
+                                    <img src="{% static 'img/blog/portrait-flight-attendant-with-plane-figurine_11zon.jpg' %}" alt="Understanding Aviation">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="tags">
+                                            <a href="#0">Aviation</a>
+                                            <a href="#0">Industry</a>
+                                            <a href="#0">Technology</a>
+                                        </div>
+                                        <h4 class="title">
+                                            <a href="{% url 'contact' %}">What is Aviation? A Complete Overview</a>
+                                        </h4>
+                                        <p>
+                                            From aircraft design and engineering to operations and maintenance, aviation encompasses a diverse range of disciplines. Learn how this industry has revolutionized global connectivity.
+                                        </p>
+                                        <a href="{% url 'contact' %}" class="more">Read More</a>
+                                    </div>
+                                    <div class="col-2 valign">
+                                        <div class="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+                            <span class="active"><a href="#0">1</a></span>
+                            <span><a href="#0">2</a></span>
+                            <span><a href="#0"><i class="fas fa-angle-right"></i></a></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<style>
+    .blog-intro {
+        padding: 30px;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .blog-intro .lead {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+    }
+
+    .content-section h2 {
+        color: #1a1a1a;
+        font-weight: 600;
+    }
+
+    .content-section h4 {
+        color: #2c3e50;
+        font-weight: 500;
+    }
+
+    .content-section p {
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .benefit-item {
+        padding: 20px;
+        border-left: 4px solid #007bff;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    .phonetic-alphabet {
+        background: #f8f9fa;
+        padding: 30px;
+        border-radius: 8px;
+    }
+
+    .phonetic-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .phonetic-list li {
+        padding: 8px 0;
+        font-size: 1.05rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .phonetic-list li:last-child {
+        border-bottom: none;
+    }
+
+    .phonetic-list strong {
+        color: #007bff;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+</style>
+
+{% endblock %}
