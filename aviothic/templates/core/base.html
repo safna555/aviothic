@@ -1,9 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="zxx" xmlns="http://www.w3.org/1999/html">
 <head>
-
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,19 +39,16 @@
     <!-- ==================== End Loading ==================== -->
 
     {% include "partials/nav.html" %}
-
     {% block content %}
     {% endblock %}
-
     {% include "partials/footer.html" %}
+
 
     <!-- jQuery -->
     <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
     <script src="{% static 'js/jquery-migrate-3.0.0.min.js' %}"></script>
-
     <!-- Plugins -->
     <script src="{% static 'js/plugins.js' %}"></script>
-
     <!-- Custom Scripts -->
     <script src="{% static 'js/scripts.js' %}"></script>
 
